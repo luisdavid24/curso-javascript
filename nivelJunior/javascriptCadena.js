@@ -18,7 +18,11 @@ let resultado5=cadena.padStart(26,"de");
 // Hace lo mismo que padStart solo que al final
 let resultado6=cadena.padEnd(26,"de");
 
+// Solo repite la cadena 
+let resultado7=cadena.repeat(2);
 
+// Separa por medio de comas, uno indica que puede usar para separarlo
+let resultado8=cadena.split(" ");
 
 document.write(resultado+"<br>");
 document.write(resultado2+"<br>");
@@ -26,3 +30,5 @@ document.write(resultado3+"<br>");
 document.write(resultado4+"<br>");
 document.write(resultado5+"<br>");
 document.write(resultado6+"<br>");
+document.write(resultado7+"<br>");
+document.write("Resultado 8: "+resultado8+"<br>");
