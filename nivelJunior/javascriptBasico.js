@@ -74,6 +74,9 @@ class Perro extends animal2{
     ladrar(){
         alert("Estoy ladrando");
     }
+    set modificarRaza(newName){
+        this.raza=newName;
+    }
 }
 
 let perro = new Perro("Perro",5,"Morado","Chanda");
