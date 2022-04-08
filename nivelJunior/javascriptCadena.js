@@ -24,6 +24,12 @@ let resultado7=cadena.repeat(2);
 // Separa por medio de comas, uno indica que puede usar para separarlo
 let resultado8=cadena.split(" ");
 
+// Extrea la parte del string que le pidamos
+let resultado9=cadena.substring(0,6);
+
+// elimina los espacios en blanco en ambos extremos del string
+let resultado10=cadena.trim();
+
 document.write(resultado+"<br>");
 document.write(resultado2+"<br>");
 document.write(resultado3+"<br>");
@@ -32,3 +38,21 @@ document.write(resultado5+"<br>");
 document.write(resultado6+"<br>");
 document.write(resultado7+"<br>");
 document.write("Resultado 8: "+resultado8+"<br>");
+document.write(resultado9+"<br>");
+document.write(resultado10+"<br>");
+
+
+let arregloElementos=["uno","dos","tres",1,2];
+document.write(arregloElementos+"<br>");
+
+// El sort solo lo invierte
+arregloElementos.sort();
+document.write(arregloElementos+"<br>");
+
+let arregloElementos2=["pera","mango","narajan","pedro"];
+document.write(arregloElementos2+"<br>");
+
+
+// El método splice() cambia el contenido de un array eliminando elementos existentes y/o agregando nuevos elementos.
+arregloElementos2.splice(2,0,"Anderson :(");
+document.write(arregloElementos2+"<br>");
