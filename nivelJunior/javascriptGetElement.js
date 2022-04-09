@@ -58,3 +58,7 @@ let valorDeClase=tiutlo.classList.replace("grande","chico");
 // titulo.textContent;muestra el contenido sin estilos
 
 // titulo.innerText; muestra el contenido con estilos ya no se usa
+
+// innerHTML muestra todo el contendio en formato html
+
+// outerHTML muestra el contenido con el de la etiqueta
