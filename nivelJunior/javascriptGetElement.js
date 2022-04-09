@@ -49,3 +49,12 @@ document.write(valor_clases);
 // Si tiene la clase la elimina y viceversa
 // ademas retorna un booleano
 titulo.classList.toggle("bello");
+
+// Lo que hace es replazar la clase grander por la chico
+// y retorna un boolenao true si hizo el cambio
+let valorDeClase=tiutlo.classList.replace("grande","chico");
+
+
+// titulo.textContent;muestra el contenido sin estilos
+
+// titulo.innerText; muestra el contenido con estilos ya no se usa
