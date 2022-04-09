@@ -12,3 +12,18 @@ document.write(parrafoClase+"<br/>");
 
 const rangoEtario= document.querySelector(".rangoEtario");
 rangoEtario.setAttribute("type","text");
+
+let valorDelAtributo=rangoEtario.getAttribute("type");
+
+// let valorDelAtributo=rangoEtario.removeAttribute("type"); aqui elimino ese atributo
+// let valorDelAtributo=rangoEtario.getAttribute("type","Aqui de poner el valor por cual lo voy a cambiar");
+
+document.write(valorDelAtributo)
+
+const input = document.querySelector(".input-normal");
+
+document.write(input.className+"<br/>");
+document.write(input.value+"<br/>");
+input.type="color";
+
+const inputFile = document.querySelector(".input-normal-file");
