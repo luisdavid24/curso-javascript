@@ -8,3 +8,7 @@ document.write(navar+"<br/>");
 // selecciona todo los elementos que concidan con lo buscado 
 let parrafoClase=document.querySelector(".parrafo_clase");
 document.write(parrafoClase+"<br/>");
+
+
+const rangoEtario= document.querySelector(".rangoEtario");
+rangoEtario.setAttribute("type","text");
