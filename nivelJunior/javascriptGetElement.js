@@ -29,3 +29,13 @@ input.type="color";
 const inputFile = document.querySelector(".input-normal-file");
 input.type="image/png";
 
+const inputMin = document.querySelector("#input_con_min");
+// input.minLength=5;
+inputMin.setAttribute("minLength","5");
+
+const titulo=document.querySelector(".titulo");
+titulo.style.color="blue"; 
+
+// Aqui se agrega y se eliminan clases del elemento titulo
+titulo.classList.add("grande");
+titulo.classList.remove("grande");
