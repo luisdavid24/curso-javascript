@@ -27,3 +27,5 @@ document.write(input.value+"<br/>");
 input.type="color";
 
 const inputFile = document.querySelector(".input-normal-file");
+input.type="image/png";
+
