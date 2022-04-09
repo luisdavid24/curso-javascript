@@ -39,3 +39,13 @@ titulo.style.color="blue";
 // Aqui se agrega y se eliminan clases del elemento titulo
 titulo.classList.add("grande");
 titulo.classList.remove("grande");
+
+
+// Aqui lo que hago es optener lo que se tenga en class y con el indice 
+// determino que parte quiero
+let valor_clases=titulo.classList.item(0);
+document.write(valor_clases);
+
+// Si tiene la clase la elimina y viceversa
+// ademas retorna un booleano
+titulo.classList.toggle("bello");
