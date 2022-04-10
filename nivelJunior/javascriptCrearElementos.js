@@ -41,3 +41,11 @@ h2Nuevo.innerHTML="Titulo";
 h2Antiguo=document.querySelector(".h2Viejo");
 
 contenedor3.replaceChild(h2Nuevo,h2Antiguo);
+
+contenedor3.removeChild(h2Nuevo);
+
+// contenedor3.hasChildNodes(); da un true si tiene hijo 
+
+// parentElement para ver el elemento padre 
+
+// NextElementSibling devuelve el elemento inmediatamente posterior al especificado
