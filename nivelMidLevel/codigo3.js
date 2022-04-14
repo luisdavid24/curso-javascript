@@ -56,15 +56,41 @@ const inputPrueba=document.querySelector(".inputPrueba");
 
 inputPrueba .addEventListener("keydown",(e)=>{
     console.log("Una fue presionada");
-});
+});//cuando la tecla se presiona
+
 inputPrueba.addEventListener("keypress",(e)=>{
-    console.log("un usuario presiono una tecla");
-});
+    console.log("un usuario presiono una tecla y la solto");
+});///cuando se presiona y se suelta en el mismo elemento
+
 inputPrueba.addEventListener("keyup",(e)=>{
     console.log("una tecla fue soltada");
+});//Solo cuando se suelta en ese mismo elemento.
+
+
+const imagenFutbol=document.querySelector(".imagenFutbol");
+
+imagenFutbol.addEventListener('error',()=>{
+    console.log("Hubo un error");
+});
+
+window.addEventListener("load",()=>{
+    console.log("Ha cargado el sitio");
 });
 
 
+window.addEventListener("beforeunload",()=>{
+    console.log("Te estas por ir del sitio");
+});//con unload es para cuando ya te fuiste del sitio
+//resize es para cuando cambia la resolucion de la pantalla
+//scroll como su nombre lo dice es para el scroll
 
+const inputSeleccionado=document.querySelector(".inputSeleccionado");
+const contenedorSeleccionado=document.querySelector(".contenedorSeleccionado");
 
+inputSeleccionado.addEventListener("select",(e)=>{
+    let start =e.target.selectionStart;
+    let end=e.target.selectionEnd;
+    let textoCompleto=inputSeleccionado.value;
+    contenedorSeleccionado.innerHTML=textoCompleto.substring(start,end);
+})
 
