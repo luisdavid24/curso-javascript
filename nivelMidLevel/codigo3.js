@@ -41,6 +41,30 @@ const buton= document.querySelector(".button2");
 buton.addEventListener("mouseover",(e)=>{
     alert("Quiere un kiwi");
 })
+
 // mouseover Cuando me poso sobre el elemento
 // mouseout Cuando me dejo de posarme sobre el elemento 
-// contextmenu doy click y suelto sobre el elemento funcion, sino no 
+// contextmenu doy click y suelto sobre el elemento funcion, sino no
+// mouseenter ocurre cuando el puntero se mueve sobre un elemento 
+// mousemove ocurre cuando el puntero se mueve mientras esta sobre un elemento 
+// mousedown ocurre cuando un usuario apreta un boton del mouse sobre un elemento 
+// mouseup courre cuando un usuario suelta un boton del mouse sobre un elemento 
+
+
+const contenedorTeclado=document.querySelector(".contenedorTeclado");
+const inputPrueba=document.querySelector(".inputPrueba");
+
+inputPrueba .addEventListener("keydown",(e)=>{
+    console.log("Una fue presionada");
+});
+inputPrueba.addEventListener("keypress",(e)=>{
+    console.log("un usuario presiono una tecla");
+});
+inputPrueba.addEventListener("keyup",(e)=>{
+    console.log("una tecla fue soltada");
+});
+
+
+
+
+
