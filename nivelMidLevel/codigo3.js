@@ -94,3 +94,4 @@ inputSeleccionado.addEventListener("select",(e)=>{
     contenedorSeleccionado.innerHTML=textoCompleto.substring(start,end);
 })
 
+// keyup es un evento para detectar cualquier tecla que se oprima
