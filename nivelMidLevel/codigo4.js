@@ -15,4 +15,7 @@ const intervalo=setInterval(()=>{
     document.write("Te gusta la carne invervalo")
 },3000);
 
-clearInterval(intervalo);
+
+setTimeout(()=>{
+    clearInterval(intervalo);
+},5000); //los temporizadores consumen mucho 
