@@ -1,14 +1,14 @@
-const nombre= document.getElementById('nombre');
+const nombre= document.getElementById('name');
 const email= document.getElementById('email');
-const materia= document.getElementById('materia');
+const materia= document.getElementById('#materia');
 const boton= document.getElementById('btn-enviar');
 const resultado= document.querySelector(".resultado");
     
 
 boton.addEventListener("click",(e)=>{
     e.preventDefault();
-    let errror=validarCampos();
-    if(errror[0]){
+    let error=validarCampos();
+    if(error[0]){
         resultado.innerHTML=error[1];
         resultado.classList.add("red");
     }else{
@@ -19,6 +19,7 @@ boton.addEventListener("click",(e)=>{
 
 const validarCampos=()=>{
     let error=[];
+    console.log(nombre);
     if(nombre.value.length <5 ){
         error[0]=true; 
         error[1]="El nombre no puede contener menos de 5 caracteres.";
@@ -28,4 +29,7 @@ const validarCampos=()=>{
         error[1]="El nombre no puede contener mas de 40 caracteres.";
         return error; 
     }
+    error[0]=false;
+    return error; 
+    
 }

@@ -21,7 +21,7 @@ input::placeholder{
 form{
     width: 86%;
     margin:auto;
-    background: #000;
+    background: rgb(41, 40, 40);
     padding: 30px;
 }
 
